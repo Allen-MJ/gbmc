@@ -106,4 +106,45 @@ public class StringUtils {
 		return result;
 
 	}
+
+	/**
+	 * first是否比secound小
+	 * @param first
+	 * @param secound
+	 * @return
+	 */
+	public static boolean comparesmall(String first,String secound){
+		int f = 0;
+		int s = 0;
+		int i = 0;
+		int k = 0;
+		char v1[] = first.toCharArray();
+		char v2[] = secound.toCharArray();
+		if(notEmpty(first)&&notEmpty(secound)){
+			f = first.length();
+			s = secound.length();
+			i = Math.min(f, s);
+			while(k<i){
+				if(v1[k]-v2[k]<0){
+					return true;
+				}else if(v1[k]-v2[k]==0){
+					k++;
+				}else{
+					return false;
+				}
+			}
+			if(f>=s){
+				return false;
+			}else if(s>f){
+				return true;
+			}
+		}
+		return false;
+	}
+	public static String replaceNewlines(String str){
+		if(notEmpty(str)){
+			return str.replaceAll("\\\\r\\\\n", ";;");
+		}
+		return "";
+	}
 }

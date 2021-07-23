@@ -36,7 +36,7 @@ public class FileUtils {
 		// genFile = Environment.getExternalStorageDirectory()+"/" +
 		// PackageUtiles.getInstance().getPackagename();
 		genFile = Environment.getExternalStorageDirectory() + "/"
-				+ PinyingUtils.getFirstSpell(AllenManager.getInstance().getAppname()) + "Cache";
+				+ "GBMC_GWYINFOR";
 		gen = new File(genFile);
 		if (!gen.exists()) {
 			gen.mkdirs();

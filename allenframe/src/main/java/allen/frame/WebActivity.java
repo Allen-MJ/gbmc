@@ -25,7 +25,6 @@ public class WebActivity extends AllenBaseActivity {
 
     @Override
     protected int getLayoutResID() {
-        setShowFloating(getIntent().getBooleanExtra("_Key_3",true),0);
         return R.layout.activity_web;
     }
 
@@ -47,8 +46,6 @@ public class WebActivity extends AllenBaseActivity {
     @Override
     protected void initUI(@Nullable Bundle savedInstanceState) {
         url = getIntent().getStringExtra("_Key_2");
-        isClose = getIntent().getBooleanExtra("_Key_3",false);
-        setShowFloating(!isClose,0);
         web = findViewById(R.id.web);
         WebSettings settings = web.getSettings();
         //支持js

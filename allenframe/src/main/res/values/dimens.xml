@@ -28,7 +28,10 @@
     <dimen name="frame_90_distance">90dp</dimen>
     <dimen name="frame_100_distance">100dp</dimen>
     <dimen name="frame_110_distance">110dp</dimen>
+    <dimen name="frame_120_distance">120dp</dimen>
+    <dimen name="frame_160_distance">160dp</dimen>
     <dimen name="frame_171_distance">171dp</dimen>
+    <dimen name="frame_300_distance">300dp</dimen>
 
     <dimen name="frame_title_height">66dp</dimen>
     <dimen name="frame_title_icon_height">64dp</dimen>

@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="gwy_psw_input_style">
+	    <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_weight">1</item>
+	    <item name="android:layout_height">@dimen/frame_40_distance</item>
+	    <item name="android:textColor">@color/text_black_color</item>
+	    <item name="android:textSize">@dimen/frame_text_biggest_size</item>
+	    <item name="android:background">@drawable/gwy_psw_input_bg</item>
+	    <item name="android:singleLine">true</item>
+	    <item name="android:inputType">numberPassword</item>
+	    <item name="android:focusable">false</item>
+	    <item name="android:focusableInTouchMode">false</item>
+	    <item name="android:gravity">center</item>
+	</style>
+	<style name="gwy_psw_button_style">
+	    <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_height">match_parent</item>
+	    <item name="android:layout_weight">1</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:textColor">@color/gwy_psw_button_text_color_selector</item>
+	    <item name="android:textSize">@dimen/frame_text_normal_size</item>
+	    <item name="android:singleLine">true</item>
+	    <item name="android:background">@drawable/gwy_psw_button_bg_selector</item>
+	</style>
+</resources>

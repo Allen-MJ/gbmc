@@ -18,6 +18,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatTextView;
 import androidx.appcompat.widget.Toolbar;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 public abstract class AllenBaseActivity extends AppCompatActivity {
 	
@@ -25,9 +27,8 @@ public abstract class AllenBaseActivity extends AppCompatActivity {
 	private ProgressDialog dialog;
 	public Context context = this;
 	private AppCompatTextView titleat;
-	private FloatingView floatingView;
-	private int resId = 0;
-	private boolean isShow = true;
+	private Unbinder unbinder;
+
 	@Override
 	protected void onCreate(@Nullable Bundle savedInstanceState) {
 		AllenManager.init(getApplication());
@@ -40,39 +41,12 @@ public abstract class AllenBaseActivity extends AppCompatActivity {
 			}
 		}
 		setContentView(getLayoutResID());
-		if(isShow){
-			floatingView = new FloatingView(this);
-			floatingView.showFloat();
-			floatingView.setOnClickListener(new View.OnClickListener() {
-				@Override
-				public void onClick(View view) {
-					startActivity(new Intent(context,WebActivity.class).putExtra("_Key_3",false)
-							.putExtra("_Key_1","智能客服")
-							.putExtra("_Key_2","https://aitongliang.sobot.com/chat/h5/v2/index.html?sysnum=c4397d34aa42432caba6abb1ffd43d2b"));
-				}
-			});
-			Glide.with(getApplicationContext()).load(resId==0?R.drawable.ic_logo_robort:resId)
-					.into(floatingView.CircleImageView());
-		}
+		unbinder = ButterKnife.bind(this);
 		initBar();
 		initUI(savedInstanceState);
 		addEvent();
 	}
 
-	@Override
-	protected void onResume() {
-		if(isShow){
-			if(floatingView!=null){
-				floatingView.update();
-			}
-		}
-		super.onResume();
-	}
-
-	protected void setShowFloating(boolean isShow,int resId){
-		this.isShow = isShow;
-		this.resId = resId;
-	}
 
 	protected abstract boolean isStatusBarColorWhite();
 
@@ -110,11 +84,10 @@ public abstract class AllenBaseActivity extends AppCompatActivity {
 			dialog.dismiss();
 			dialog = null;
 		}
-		if (floatingView != null) {
-			floatingView.dismissFloatView();
-			floatingView = null;
-		}
 		super.onDestroy();
+		if(unbinder!=Unbinder.EMPTY){
+			unbinder.unbind();
+		}
 	}
 	public void showProgressDialog(String msg){
 		if(dialog==null?true:!dialog.isShowing()){

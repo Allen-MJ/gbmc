@@ -1,0 +1,16 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="alen.mj.base">
+
+    /
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+
+    <activity android:name="alen.mj.base.UpdateActivity"
+        android:screenOrientation="landscape">
+    </activity>
+    <activity android:name="alen.mj.base.GwyMainActivity"
+        android:screenOrientation="landscape">
+    </activity>
+
+    -->
+</manifest>

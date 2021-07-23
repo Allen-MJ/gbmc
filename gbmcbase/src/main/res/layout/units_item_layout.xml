@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  	xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="match_parent"
+  	android:layout_height="wrap_content"
+  	android:paddingRight="@dimen/frame_eight_distance"
+  	android:paddingLeft="@dimen/frame_eight_distance"
+  	android:paddingBottom="@dimen/frame_edge_distance"
+  	android:paddingTop="@dimen/frame_edge_distance"
+  	android:orientation="horizontal"
+  	>
+  	<TextView
+  		android:id="@+id/units_item_sort"
+  		android:layout_width="@dimen/frame_32_distance"
+  		android:layout_height="@dimen/frame_32_distance"
+  		android:textSize="@dimen/frame_text_small_size"
+	    android:textColor="@color/text_black_color"
+	    android:textStyle="bold"
+	    android:gravity="center"
+	    android:background="@drawable/number_blue_bg"
+  		/>
+	<TextView
+	  	android:id="@+id/units_item_name"
+	  	android:layout_width="match_parent"
+	  	android:layout_height="wrap_content"
+   		android:textSize="@dimen/frame_text_small_size"
+	    android:textColor="@color/text_black_color"
+	    android:layout_marginLeft="@dimen/frame_eight_distance"
+	  	/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">干部名册</string>
+    <string name="gwy_psw_title">请输入密码</string>
+    <string name="number_one_str">1</string>
+    <string name="number_two_str">2</string>
+    <string name="number_three_str">3</string>
+    <string name="number_four_str">4</string>
+    <string name="number_five_str">5</string>
+    <string name="number_six_str">6</string>
+    <string name="number_seven_str">7</string>
+    <string name="number_eight_str">8</string>
+    <string name="number_nine_str">9</string>
+    <string name="number_zero_str">0</string>
+    <string name="number_delete_str">X</string>
+    <string name="number_null_str">清空</string>
+    <string name="number_str">7dbc5c992f14a69423f8e0497e10a814</string>
+
+</resources>

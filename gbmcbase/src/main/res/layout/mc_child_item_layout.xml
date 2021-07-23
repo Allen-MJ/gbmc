@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/tree_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:padding="@dimen/frame_edge_distance"
+        android:textColor="@color/text_gray_color"
+        android:textSize="@dimen/frame_text_normal_size"
+        android:background="@drawable/abc_list_selector_holo_light" />
+</LinearLayout>

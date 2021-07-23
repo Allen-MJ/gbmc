@@ -1,0 +1,15 @@
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+	android:fitsSystemWindows="true">
+    <include layout="@layout/alen_toolbar_layout"/>
+    <androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/recycler"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:overScrollMode="never"
+		android:layout_margin="@dimen/frame_32_distance"/>
+</androidx.appcompat.widget.LinearLayoutCompat>

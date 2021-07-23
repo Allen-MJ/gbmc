@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gwy_title_bar_color" >
+    <include layout="@layout/gwy_title_custom_bar_layout"/>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:background="@drawable/mc_third_bg"
+	    android:layout_marginLeft="@dimen/frame_eight_distance"
+	    android:layout_marginRight="@dimen/frame_eight_distance"
+	    android:layout_marginBottom="@dimen/frame_eight_distance"
+	    >
+	    <include layout="@layout/alen_progress_layout"/>
+	    <WebView
+	       	android:id="@+id/wv"
+	       	android:layout_width="match_parent"
+	       	android:layout_height="match_parent"
+	       	/>
+	</LinearLayout>
+</LinearLayout>

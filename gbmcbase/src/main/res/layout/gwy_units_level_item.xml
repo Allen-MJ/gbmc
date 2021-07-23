@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/frame_four_distance"
+    android:paddingLeft="@dimen/frame_eight_distance"
+    android:paddingRight="@dimen/frame_eight_distance"
+    android:paddingTop="@dimen/frame_four_distance" >
+
+    <TextView
+        android:id="@+id/defaultView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/units_item_icon"
+        android:layout_width="@dimen/frame_20_distance"
+        android:layout_height="@dimen/frame_20_distance"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/base_ic_right" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/units_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:paddingBottom="@dimen/frame_eight_distance"
+        android:paddingLeft="@dimen/frame_eight_distance"
+        android:paddingRight="@dimen/frame_eight_distance"
+        android:paddingTop="@dimen/frame_eight_distance"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/text_color_black2red_selector"
+        android:textSize="@dimen/frame_text_small_size" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

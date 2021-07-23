@@ -1,3 +1,4 @@
+include ':gbmcbase'
 include ':allenframe'
 include ':app'
 rootProject.name = "干部名册"

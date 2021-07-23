@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/gwy_title_bar_layout"/>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/gwy_title_bar_color"
+	    android:orientation="horizontal"
+	    >
+	    <ListView 
+	        android:id="@+id/mc_list"
+	        android:layout_width="@dimen/frame_160_distance"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/mc_first_bg"
+	        android:layout_marginLeft="@dimen/frame_eight_distance"
+	        android:layout_marginRight="@dimen/frame_eight_distance"
+	        android:layout_marginBottom="@dimen/frame_edge_distance"
+	        android:divider="@android:color/transparent"
+	        android:dividerHeight="0dp"
+	        >
+	    </ListView>
+	    <ListView 
+	        android:id="@+id/mc_son_list"
+	        android:layout_width="@dimen/frame_160_distance"
+	        android:layout_height="match_parent"
+	        android:visibility="gone"
+	        android:background="@drawable/mc_second_bg"
+	        android:layout_marginRight="@dimen/frame_eight_distance"
+	        android:layout_marginBottom="@dimen/frame_edge_distance"
+	        android:divider="@android:color/transparent"
+	        android:dividerHeight="0dp"
+	        >
+	    </ListView>
+	    <FrameLayout 
+	        android:id="@+id/units_layout"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@drawable/mc_third_bg"
+	        android:layout_marginRight="@dimen/frame_eight_distance"
+	        android:layout_marginBottom="@dimen/frame_edge_distance"
+	        >
+	    </FrameLayout>
+	</LinearLayout>
+</LinearLayout>

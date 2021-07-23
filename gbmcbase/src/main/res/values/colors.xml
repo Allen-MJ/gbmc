@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="gwy_title_bar_color">#1b547d</color>
+    <color name="gwy_psw_color">#331b547d</color>
+    <color name="gwy_psw_input_border_color">#2380c4</color>
+    <color name="gwy_psw_border_color">#33ffffff</color>
+    <color name="gwy_bt_color">#134367</color>
+
+    <color name="menu_bg_color_1">#ffe3e2</color>
+    <color name="menu_bg_color_2">#f8e4a5</color>
+    <color name="menu_bg_color_3">#e6f6ab</color>
+    <color name="menu_bg_color_4">#cff0f5</color>
+    <color name="menu_bg_color_6">#ebebeb</color>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg">
+    <include layout="@layout/alen_toolbar_layout"/>
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/side"
+            android:layout_width="@dimen/frame_160_distance"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:layout_gravity="end"/>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
